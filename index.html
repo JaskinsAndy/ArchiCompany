@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АрхиСтудия - Современная архитектура Узбекистана</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="building-icon">
+                <img src="public/house.jpg" alt="House" class="loading-house-image">
+            </div>
+            <div class="loading-text">АрхиСтудия</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="public/logo.jpg" alt="АрхиСтудия Logo" class="logo-icon" width="32" height="32">
+                АрхиСтудия
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#projects" class="nav-link">Проекты</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+                <li><a href="tel:+998909636969" class="nav-phone">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.19 12.85C3.49997 10.2412 2.44824 7.27099 2.12 4.18C2.09501 3.90347 2.12788 3.62476 2.2165 3.36162C2.30513 3.09849 2.44757 2.85669 2.63477 2.65162C2.82196 2.44655 3.04981 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.11 2H7.11C7.59531 1.99522 8.06748 2.16708 8.43284 2.48353C8.79819 2.79999 9.02972 3.23945 9.09 3.72C9.20072 4.68007 9.40138 5.62273 9.69 6.53C9.83752 6.88792 9.88792 7.27691 9.83494 7.65834C9.78196 8.03977 9.62739 8.39804 9.39 8.7L8.09 10C9.51356 12.4135 11.5865 14.4864 14 15.91L15.3 14.61C15.602 14.3726 15.9602 14.218 16.3417 14.1651C16.7231 14.1121 17.1121 14.1625 17.47 14.31C18.3773 14.5986 19.3199 14.7993 20.28 14.91C20.7658 14.9703 21.2094 15.2067 21.5265 15.5776C21.8437 15.9486 22.0122 16.4267 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    +998 90 963 69 69
+                </a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Современная архитектура</span>
+                        <span class="title-line">для <span class="highlight">Узбекистана</span></span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Превращаем ваши мечты в реальность с помощью инновационного дизайна и профессионального подхода
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="tel:+998909636969" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.19 12.85C3.49997 10.2412 2.44824 7.27099 2.12 4.18C2.09501 3.90347 2.12788 3.62476 2.2165 3.36162C2.30513 3.09849 2.44757 2.85669 2.63477 2.65162C2.82196 2.44655 3.04981 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.11 2H7.11C7.59531 1.99522 8.06748 2.16708 8.43284 2.48353C8.79819 2.79999 9.02972 3.23945 9.09 3.72C9.20072 4.68007 9.40138 5.62273 9.69 6.53C9.83752 6.88792 9.88792 7.27691 9.83494 7.65834C9.78196 8.03977 9.62739 8.39804 9.39 8.7L8.09 10C9.51356 12.4135 11.5865 14.4864 14 15.91L15.3 14.61C15.602 14.3726 15.9602 14.218 16.3417 14.1651C16.7231 14.1121 17.1121 14.1625 17.47 14.31C18.3773 14.5986 19.3199 14.7993 20.28 14.91C20.7658 14.9703 21.2094 15.2067 21.5265 15.5776C21.8437 15.9486 22.0122 16.4267 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Позвонить сейчас
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Наши услуги</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="building-3d">
+                        <div class="building-front">
+                            <img src="public/house.jpg" alt="Architecture" class="hero-house-image">
+                        </div>
+                        <div class="building-side"></div>
+                        <div class="building-top"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши услуги</h2>
+                <p class="section-subtitle">
+                    Предлагаем полный спектр архитектурных и дизайнерских услуг для воплощения ваших идей
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>🟤 Проектирование зданий и сооружений</h3>
+                    <p>Полный цикл архитектурного проектирования от концепции до рабочих чертежей</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>🟤 3D визуализация</h3>
+                    <p>Фотореалистичная 3D визуализация ваших проектов для лучшего понимания результата</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 11L19.5 13L22 13.5L19.5 14L19 16L18.5 14L16 13.5L18.5 13L19 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 21L19.5 19L22 18.5L19.5 18L19 16L18.5 18L16 18.5L18.5 19L19 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>🟤 Интерьер и экстерьер дизайн</h3>
+                    <p>Создание уникального дизайна интерьеров и экстерьеров с учетом ваших предпочтений</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 12L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M21 12V19C21 19.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>🟤 Авторский надзор</h3>
+                    <p>Контроль качества строительства и соответствия проекту на всех этапах</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.7 6.3C15.0899 5.91006 15.5698 5.65835 16.09 5.57007C16.6103 5.48178 17.1433 5.56078 17.6147 5.79732C18.0862 6.03386 18.4704 6.41524 18.7129 6.88721C18.9555 7.35918 19.0444 7.89227 18.9673 8.41228C18.8902 8.93229 18.6508 9.41218 18.2852 9.77787L10.93 17.13C10.7526 17.3074 10.5275 17.4286 10.28 17.48L7 18L7.52 14.72C7.57144 14.4725 7.69264 14.2474 7.87 14.07L15.24 6.69C15.1636 6.69928 14.7 6.3 14.7 6.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16.5 10L14 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>🟤 Ремонт под ключ</h3>
+                    <p>Полный комплекс ремонтных работ от планирования до финальной отделки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Завершенных проектов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Лет опыта</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Довольных клиентов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О нашей студии</h2>
+                    <p>Мы - команда профессиональных архитекторов и дизайнеров, специализирующихся на создании современных и функциональных пространств в Узбекистане.</p>
+                    <p>Наш подход объединяет традиционные архитектурные принципы с современными технологиями и материалами, создавая уникальные решения для каждого клиента.</p>
+                    <ul class="features-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12V19C21 19.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Более 50 успешно реализованных проектов
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12V19C21 19.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Команда сертифицированных специалистов
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12V19C21 19.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Индивидуальный подход к каждому проекту
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12V19C21 19.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Использование современных технологий
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="team-graphic">
+                        <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="160" cy="160" r="150" fill="url(#teamGradient)"/>
+                            <circle cx="120" cy="120" r="25" fill="rgba(255,255,255,0.3)"/>
+                            <circle cx="200" cy="120" r="25" fill="rgba(255,255,255,0.3)"/>
+                            <circle cx="160" cy="200" r="25" fill="rgba(255,255,255,0.3)"/>
+                            <path d="M120 120L200 120L160 200Z" fill="rgba(255,255,255,0.2)"/>
+                            <defs>
+                                <linearGradient id="teamGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#667eea"/>
+                                    <stop offset="100%" style="stop-color:#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наши проекты</h2>
+                <p class="section-subtitle">
+                    Познакомьтесь с нашими реализованными проектами в области архитектуры и дизайна по всему Узбекистану
+                </p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card" onclick="openProjectModal()">
+                    <div class="project-image">
+                        <img src="Project1Images/Project1Naziko.jpg" alt="Первый проект" class="project-cover-image">
+                        <div class="project-overlay">
+                            <span class="project-status completed">Завершен</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Первый проект</h3>
+                        <p>Бла Бла Бла.</p>
+                        <div class="project-meta">
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Ташкент
+                            </span>
+                            <span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                                    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                                2025
+                            </span>
+                        </div>
+                        <button class="gallery-btn" onclick="event.stopPropagation(); openGallery()">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/>
+                                <polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Галерея
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Свяжитесь с нами</h2>
+                <p class="section-subtitle">
+                    Мы готовы обсудить ваш проект и ответить на все вопросы. Свяжитесь с нами удобным для вас способом
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <p>Готовы обсудить ваш проект? Мы предоставим профессиональную консультацию и поможем воплотить ваши идеи в жизнь</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.19 12.85C3.49997 10.2412 2.44824 7.27099 2.12 4.18C2.09501 3.90347 2.12788 3.62476 2.2165 3.36162C2.30513 3.09849 2.44757 2.85669 2.63477 2.65162C2.82196 2.44655 3.04981 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.11 2H7.11C7.59531 1.99522 8.06748 2.16708 8.43284 2.48353C8.79819 2.79999 9.02972 3.23945 9.09 3.72C9.20072 4.68007 9.40138 5.62273 9.69 6.53C9.83752 6.88792 9.88792 7.27691 9.83494 7.65834C9.78196 8.03977 9.62739 8.39804 9.39 8.7L8.09 10C9.51356 12.4135 11.5865 14.4864 14 15.91L15.3 14.61C15.602 14.3726 15.9602 14.218 16.3417 14.1651C16.7231 14.1121 17.1121 14.1625 17.47 14.31C18.3773 14.5986 19.3199 14.7993 20.28 14.91C20.7658 14.9703 21.2094 15.2067 21.5265 15.5776C21.8437 15.9486 22.0122 16.4267 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Телефон</h4>
+                                <a href="tel:+998909636969">📞 +998 90 963 69 69</a>
+                                <p>Звоните в рабочее время для консультации</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Местоположение</h4>
+                                <p><strong>Узбекистан</strong></p>
+                                <p>Работаем по всей территории страны</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Электронная почта</h4>
+                                <a href="mailto:pulatov_nazirjon@mail.ru">pulatov_nazirjon@mail.ru</a>
+                                <p>Отправьте нам сообщение в любое время</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div>
+                                <h4>Мессенджеры</h4>
+                                <p>Telegram: @architector_pulatov</p>
+                                <p>WhatsApp: +998 90 963 69 69</p>
+                                <p>Быстрая связь и консультации</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <h3>Оставьте заявку</h3>
+                        <div id="form-success" class="form-success" style="display: none;">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 12L11 14L22 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21 12V19C21 19.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h4>Заявка отправлена!</h4>
+                            <p>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+                        </div>
+                        <div id="form-fields">
+                            <div class="form-row">
+                                <input type="text" name="firstName" placeholder="Имя *" required>
+                                <input type="text" name="lastName" placeholder="Фамилия">
+                            </div>
+                            <input type="tel" name="phone" placeholder="+998 90 000 00 00" required>
+                            <input type="email" name="email" placeholder="Email">
+                            <select name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="design">Проектирование зданий и сооружений</option>
+                                <option value="3d">3D визуализация</option>
+                                <option value="interior">Интерьер и экстерьер дизайн</option>
+                                <option value="supervision">Авторский надзор</option>
+                                <option value="renovation">Ремонт под ключ</option>
+                                <option value="consultation">Консультация</option>
+                            </select>
+                            <select name="budget">
+                                <option value="">Выберите примерный бюджет</option>
+                                <option value="under-50m">До 50 млн сум</option>
+                                <option value="50m-100m">50-100 млн сум</option>
+                                <option value="100m-500m">100-500 млн сум</option>
+                                <option value="500m-1b">500 млн - 1 млрд сум</option>
+                                <option value="over-1b">Свыше 1 млрд сум</option>
+                            </select>
+                            <textarea name="message" placeholder="Расскажите подробнее о вашем проекте..." rows="5" required></textarea>
+                            <button type="submit" class="btn btn-primary" id="submit-btn">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2" fill="currentColor"/>
+                                </svg>
+                                Отправить заявку
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="owner">
+        <div class="container">
+            <div class="owner-content">
+                <div class="owner-avatar">
+                    <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="60" cy="60" r="60" fill="url(#ownerGradient)"/>
+                        <circle cx="60" cy="45" r="20" fill="rgba(255,255,255,0.3)"/>
+                        <path d="M20 100C20 82 37 68 60 68C83 68 100 82 100 100" fill="rgba(255,255,255,0.3)"/>
+                        <defs>
+                            <linearGradient id="ownerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#667eea"/>
+                                <stop offset="100%" style="stop-color:#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h2>Познакомьтесь с владельцем</h2>
+                <h3>Главный архитектор и основатель студии</h3>
+                <p>Более 15 лет опыта в области архитектуры и дизайна. Выпускник Ташкентского архитектурно-строительного института. Специализируется на современной архитектуре с элементами национального стиля. Руководил более чем 50 успешными проектами по всему Узбекистану.</p>
+                <div class="owner-contact">
+                    <h4>Прямая связь с руководителем</h4>
+                    <a href="tel:+998909636969">📞 +998 90 963 69 69</a>
+                    <p>Для консультации по крупным проектам и партнерству</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="public/logo.jpg" alt="АрхиСтудия Logo" width="32" height="32">
+                        АрхиСтудия
+                    </div>
+                    <p>Современная архитектура и дизайн для Узбекистана. Превращаем ваши мечты в реальность с помощью инновационного дизайна и профессионального подхода.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Наши услуги</h4>
+                    <ul>
+                        <li>🟤 Проектирование зданий и сооружений</li>
+                        <li>🟤 3D визуализация</li>
+                        <li>🟤 Интерьер и экстерьер дизайн</li>
+                        <li>🟤 Авторский надзор</li>
+                        <li>🟤 Ремонт под ключ</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>📞 +998 90 963 69 69</p>
+                    <p>✉️ pulatov_nazirjon@mail.ru</p>
+                    <p>📍 Узбекистан</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 АрхиСтудия. Все права защищены.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/architecture_company_uzb/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="currentColor" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12" y1="19" x2="12" y2="5" stroke="currentColor" stroke-width="2"/>
+            <polyline points="5,12 12,5 19,12" stroke="currentColor" stroke-width="2"/>
+        </svg>
+    </button>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal()">&times;</span>
+            <div class="modal-header">
+                <h2>Первый проект</h2>
+                <div class="project-details">
+                    <span class="detail-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Ташкент
+                    </span>
+                    <span class="detail-item">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/>
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        2025
+                    </span>
+                    <span class="detail-item status completed">Завершен</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <img src="Project1Images/Project1Naziko.jpg" alt="Первый проект" class="modal-main-image">
+                <div class="project-description">
+                    <h3>О проекте</h3>
+                    <p>Современный архитектурный проект, воплощающий в себе инновационные решения и функциональный дизайн. Проект сочетает в себе эстетическую привлекательность и практичность, создавая комфортное пространство для жизни и работы.</p>
+                    <p>В проекте использованы современные материалы и технологии строительства, что обеспечивает долговечность и энергоэффективность здания. Особое внимание уделено интеграции архитектуры с окружающим ландшафтом.</p>
+                </div>
+                <button class="btn btn-primary" onclick="openGallery()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="2"/>
+                        <polyline points="21,15 16,10 5,21" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                    Смотреть галерею
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal gallery-modal">
+        <div class="gallery-content">
+            <span class="close" onclick="closeGallery()">&times;</span>
+            <div class="gallery-header">
+                <h2>Галерея проекта</h2>
+            </div>
+            <div class="gallery-main">
+                <button class="gallery-nav prev" onclick="previousImage()">❮</button>
+                <img id="gallery-main-image" src="Project1Images/Project1Naziko.jpg" alt="Project Image" class="gallery-main-image">
+                <button class="gallery-nav next" onclick="nextImage()">❯</button>
+            </div>
+            <div class="gallery-thumbnails">
+                <img src="Project1Images/Project1Naziko.jpg" alt="Image 1" class="gallery-thumb active" onclick="showImage(0)">
+                <img src="Project1Images/NestOne_View23.jpg" alt="Image 2" class="gallery-thumb" onclick="showImage(1)">
+                <img src="Project1Images/NestOne_View24.jpg" alt="Image 3" class="gallery-thumb" onclick="showImage(2)">
+                <img src="Project1Images/NestOne_View26.jpg" alt="Image 4" class="gallery-thumb" onclick="showImage(3)">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
